@@ -22,7 +22,7 @@ if b"Username" in response:
 	output = tn.read_until(b">", 5)
 	print(output)
 	tn.write(b"enable" + b"\n")
-	output = tn.read_until(b"#", 5)
+	output = tn.read_until(b":", 5)
 	print(output)
 	tn.write(unamepw.encode('ascii') + b"\n")
 	output = tn.read_until(b"#", 5)
