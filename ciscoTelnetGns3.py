@@ -39,7 +39,7 @@ tn.write(b"configure terminal" + b"\n")
 output = tn.read_until(b"#", 5)
 print(output)
 
-tn.write(b"vlan 333" + b"\n")
+tn.write(b"vlan 222" + b"\n")
 output = tn.read_until(b"#", 5)
 print(output)
 
