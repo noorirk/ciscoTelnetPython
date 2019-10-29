@@ -10,8 +10,8 @@ ip = "192.168.1.254"
 
 tn = telnetlib.Telnet(ip)
 time.sleep(2)
-output = tn.read_until(b"Username:", 5)
-print(output)
+response = tn.read_until(b"Username:", 5)
+print(response)
 
 if b"Username" in response:
 	print("found")
