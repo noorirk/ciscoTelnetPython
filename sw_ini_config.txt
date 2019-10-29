@@ -6,6 +6,7 @@ interface Vlan1
 !
 
 username cisco password 0 cisco
+enable password 0 cisco
 
 line vty 0 4
  password cisco
