@@ -31,9 +31,9 @@ if b"Username" in response:
 else:
 	print("not found")
 
-tn.write(b"show vlan" + b"\n")
-output = tn.read_until(b"#", 5)
-print(output)
+#tn.write(b"show vlan" + b"\n")
+#output = tn.read_until(b"#", 5)
+#print(output)
 
 tn.write(b"configure terminal" + b"\n")
 output = tn.read_until(b"#", 5)
