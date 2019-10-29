@@ -5,8 +5,8 @@ import telnetlib
 import time
 
 username = "cisco"
-unamepw = "xgm!!66"
-ip = "192.168.16.6"
+unamepw = "cisco"
+ip = "192.168.1.254"
 
 tn = telnetlib.Telnet(ip)
 time.sleep(2)
